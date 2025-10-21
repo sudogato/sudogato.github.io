@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Binance Referral ID Bonus — TRZC9ZER</title>
+  <meta name="description" content="Binance Referral ID Bonus - Enter the referral code TRZC9ZER when signing up to Binance" />
+  <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/60090bf01f4dde3d3a10ba82/1611400543735-HDS8JTY46NDA71R7I9Q4/favicon.ico" />
+  <style>
+    :root{--accent:#efba0b;--dark:#12161c;--bg:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#fff;background:#12161c;line-height:1.6}
+    .container{max-width:800px;margin:0 auto;text-align:center;padding:40px 20px}
+    header{background:#12161c;padding:20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333;flex-wrap:wrap}
+    .logo img{height:50px;max-width:100%;display:block;margin:auto}
+    .cta a{border:1px solid #fff;padding:8px 16px;color:#fff;text-decoration:none;border-radius:4px;font-weight:600;transition:background .3s}
+    .cta a:hover{background:#fff;color:#12161c}
+    h1{font-size:22px;font-weight:700;margin:20px 0}
+    p{margin-bottom:10px}
+    .code-box{border:2px dashed #efba0b;display:inline-block;padding:12px 30px;border-radius:8px;margin:20px 0;font-weight:700;font-size:28px;color:#efba0b;cursor:pointer}
+    .copy-text{font-size:14px;color:#ccc;margin-bottom:16px}
+    .btn-main{display:inline-block;padding:10px 20px;background:#fff;color:#12161c;text-decoration:none;font-weight:600;border-radius:4px;margin-bottom:30px}
+    .signup img{max-width:260px;border-radius:6px;margin-bottom:30px;width:100%}
+    h2{font-size:24px;margin-top:40px;font-weight:700}
+    footer{text-align:center;padding:30px 20px;background:#12161c;color:#ccc;font-size:14px;margin-top:40px}
+
+    /* Responsive Header */
+    @media (max-width:600px){
+      header{flex-direction:column;align-items:center;text-align:center;gap:12px}
+      .cta a{width:100%;max-width:240px;text-align:center}
+      .logo img{height:40px}
+      h1{font-size:20px}
+      .code-box{font-size:24px;padding:10px 20px}
+      h2{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://images.squarespace-cdn.com/content/v1/60532d3fcf31d67dd76c5571/1616065498334-V3TKHM2M7UYCT6DI4I1C/binance.png?format=1500w" alt="Binance Referral ID" />
+    </div>
+    <div class="cta">
+      <a href="https://www.binance.me/en/register?ref=TRZC9ZER" target="_blank">Get 35% Bonus Now</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Binance Referral ID Bonus</h1>
+    <p>Register With Our Code Below And Get 35% Lifetime Discount Of Trading Fees</p>
+    <p>10% From Our Code + 25% If You Hold BNB</p>
+
+    <div class="code-box" id="refCode">TRZC9ZER</div>
+    <div class="copy-text" id="copyText">Click here to copy code</div>
+    <a href="https://www.binance.me/en/register?ref=TRZC9ZER" target="_blank" class="btn-main">Get 35% Bonus Now</a>
+
+    <div class="signup">
+      <img src="https://binancejs.github.io/binance-reff.jpg" alt="Create Binance Account" />
+    </div>
+
+    <h2>How it Works</h2>
+    <p>When signing up, use the referral ID code <strong>TRZC9ZER</strong> where it says “Referral ID (Optional)”</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Binance Referral ID | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Copy referral code on click
+    const codeBox = document.getElementById('refCode');
+    const copyText = document.getElementById('copyText');
+
+    function copyCode() {
+      const text = codeBox.textContent.trim();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          copyText.textContent = 'Copied: ' + text;
+          setTimeout(() => copyText.textContent = 'Click here to copy code', 2000);
+        });
+      } else {
+        const el = document.createElement('textarea');
+        el.value = text;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        copyText.textContent = 'Copied: ' + text;
+        setTimeout(() => copyText.textContent = 'Click here to copy code', 2000);
+      }
+    }
+
+    codeBox.addEventListener('click', copyCode);
+    copyText.addEventListener('click', copyCode);
+  </script>
+</body>
+</html>
